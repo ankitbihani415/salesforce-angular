@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+}
+a {
+  cursor: pointer;
+  color: #6e76ce;	
+}
+.events-container h1{
+	font-size: 22px;
+
+}
+.events-container .mat-header-row{
+	background-color: #3f51b5;
+}
+.events-container .mat-header-cell{
+	color: #ffffff;
+	font-size: 14px;
+}
+.events-container .mat-cell a{
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.events-container .mat-row:nth-child(even) {
+	background-color: #f2f2f2;
+}
+

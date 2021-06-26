@@ -1,0 +1,40 @@
+<form [formGroup]="registrationForm" *ngIf="registrationForm">
+  <h3 class="mb-3">Register event</h3>
+  <div class="row">
+    <div class="col-sm-12">
+      <mat-form-field>
+        <input matInput placeholder="Enter first name" formControlName="firstName__c">
+      </mat-form-field>
+    </div>
+    <div class="col-sm-12">
+      <mat-form-field>
+        <input matInput placeholder="Enter last name" formControlName="lastName__c">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <mat-form-field>
+        <input matInput placeholder="Enter email" formControlName="email__c">
+      </mat-form-field>
+    </div>
+    <div class="col-sm-12">
+      <mat-form-field>
+        <input matInput placeholder="Enter phone number" formControlName="phone__c">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <mat-form-field>
+        <input matInput placeholder="Enter company" formControlName="company__c">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="form-group mt-3">
+    <button type="button" class="
+    btn btn-primary" [disabled]="!registrationForm.valid" (click)="registerEvent()">Register</button>
+    <button type="button" class="
+    btn btn-danger m-l-2" (click)="onClose()">Close</button>
+  </div>
+</form>

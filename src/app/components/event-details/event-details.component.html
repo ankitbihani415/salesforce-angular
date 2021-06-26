@@ -1,0 +1,36 @@
+<div class="events-container mt-5" *ngIf="event">
+  <div class="row">
+    <div class="col-md-6">
+      <mat-card>
+        <div class="mb-3">
+          <div class="event-banner">
+            <img src="{{event.banner__c}}" class="img-fluid">
+            <span _ngcontent-bih-c2="" class="badge badge-pill btn-info"> {{event.Status__c}} </span>
+          </div>
+        </div>
+        <mat-card-header>
+          <mat-card-title>{{event.title__c}}</mat-card-title>
+          <mat-card-subtitle>
+            <div class="event-date">
+              <div class="mr-2">
+                <strong> Start Date: </strong>{{event.StartDate__c | date:'short'}}
+              </div>
+              <div>
+                <strong>End Date: </strong>{{event.EndDate__c | date:'short'}}
+              </div>  
+            </div>
+          </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          
+          <p>
+            {{event.Description__c | striphtml}}
+          </p>
+          <div class="text-right">
+            <button class="btn btn-primary btn-lg" color="primary" (click)="openEventRegistrationModal(event.Id)">Register</button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

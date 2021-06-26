@@ -1,0 +1,29 @@
+.events-container {
+  .mat-card {
+    box-shadow: 0px 8px 38px #c5c4c4;
+  }
+  .mat-card-content {
+    padding: 0 16px;
+  }
+  .event-date {
+    display: flex;
+    justify-content: space-between;
+  }
+  .event-banner {
+    position: relative;
+  }
+  .event-banner .badge {
+    position: absolute;
+    z-index: 1;
+    bottom: 15px;
+    right: 15px;
+    min-width: 70px;
+    min-height: 20px;
+    line-height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .event-banner .badge:hover {
+    color: #ffffff;
+  }
+}
