@@ -37,7 +37,7 @@ export class EventDetailsComponent implements OnInit {
       )  	
   }
 
-  private openEventRegistrationModal(eventId) {
+  public openEventRegistrationModal(eventId) {
     this.dialog.open(EventRegistrationDialogComponent, {
       width: '400px',
       data: {eventId: eventId}
