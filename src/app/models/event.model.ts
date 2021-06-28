@@ -5,4 +5,5 @@ export class Event {
   EndDate__c: string
   Status__c: string
   Description__c: string
+  banner__c: string
 }
